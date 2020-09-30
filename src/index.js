@@ -5,7 +5,6 @@ import App from "./App";
 import { unregister } from "./serviceWorker";
 
 window.renderChild2 = (containerId, history) => {
-  console.log("render called");
   ReactDOM.render(<App history={history} />, document.getElementById(containerId));
   unregister();
 };

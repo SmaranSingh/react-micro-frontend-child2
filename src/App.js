@@ -1,12 +1,12 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 
 const { REACT_APP_CHILD2_HOST: host } = process.env;
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App child2'>
       <header className='App-header'>
         <img src={`${host}${logo}`} className='App-logo' alt='logo' />
         <p>Child 2</p>
